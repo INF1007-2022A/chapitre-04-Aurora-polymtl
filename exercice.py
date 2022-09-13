@@ -9,8 +9,8 @@ def is_even_len(string: str) -> bool:
 
 
 def remove_third_char(string: str) -> str:
-#Supprimer le troisième caractère d'une chaîne de caractères
-    pass
+# Supprimer le troisième caractère d'une chaîne de caractères
+    return string[:2] + string[3:]
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
