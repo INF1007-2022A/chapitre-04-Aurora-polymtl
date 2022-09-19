@@ -4,7 +4,7 @@
 
 def is_even_len(string: str) -> bool:
 #Vérifier si le nombre de caractères d'une chaîne de caractères est pair
-    return len(string) % 2 == 0:
+    return len(string) % 2 == 0
 
 
 
@@ -20,7 +20,17 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 def get_number_of_char(string: str, char: str) -> int:
 #Renvoyer le nombre d’occurrences d’un caractère dans une chaîne de caractères, sans utiliser de fonctions avancées
-    pass
+    compteur = 0
+    for i in range(0, len(string)):
+        if string[i] == char:
+            compteur += 1
+    return compteur
+
+    compteur = 0
+    for caractere in string:
+        if caractere == char:
+            compteur += 1
+    return compteur
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
